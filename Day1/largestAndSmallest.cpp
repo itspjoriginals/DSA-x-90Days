@@ -4,14 +4,6 @@ using namespace std;
 
 
 int main(){
-    // int marks[5] = {100, 76, 87, 36, 91};
-    // double price[5] = {34.5, 65.8, 98.45, 56.8, 54.34};
-
-    // cout<<marks[0]<<endl;
-    // cout<<marks[1]<<endl;
-    // cout<<marks[2]<<endl;
-    // cout<<marks[3]<<endl;
-    // cout<<marks[4]<<endl;
 
     int size = 5;
     int marks[size];
@@ -24,25 +16,30 @@ int main(){
         cin>>marks[i];
     }
 
-//printing values of array
-    // for(int i=0; i<size; i++){
-    //     cout<<marks[i]<<endl;
-    // }
+    int sCount=-1;
+    int lCount=-1;
+
 
     for(int i=0; i<size; i++){
         if(marks[i]<smallest){
             smallest = marks[i];
+            sCount= i;
         }
+        
     }
 
     for (int i=0; i<size; i++){
         if(marks[i]>largest){
             largest = marks[i];
+            lCount=i;
         }
+        
     }
 
     cout<<"Smallest Value in Marks is : "<<smallest<<endl;
+    cout<<"Smallest value is at index : "<<sCount<<endl;
     cout<<"Largest Value in Marks is : "<<largest<<endl;
+    cout<<"Largest value is at index : "<<lCount<<endl;
 
 
     return 0;
