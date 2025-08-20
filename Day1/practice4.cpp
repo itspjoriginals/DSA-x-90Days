@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Function to find the two elements with the maximum sum in an array
+
 vector<int> maxSum(vector<int> arr, int size){
     vector<int> result;
     int maxSum = INT_MIN;
